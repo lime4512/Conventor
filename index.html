@@ -4,13 +4,58 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Валютный конвертор</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap"
+			rel="stylesheet"
+		/>
+
 		<link rel="stylesheet" href="style.css" />
 		<script src="app.js" defer></script>
 	</head>
 	<body>
-		<h1>Конвертор валют</h1>
-		<input type="text" class="input" />
-		<button class="btn">Нажать</button>
-		<h2 class="text"></h2>
+		<div class="container">
+			<div class="content">
+				<h1 class="title">Конвертер валют</h1>
+				<div class="val-content">
+					<div class="val-num">
+						<h2 class="title_num">Курс RUB</h2>
+						<h2 class="num RUB-T">34.33</h2>
+					</div>
+					<div class="val-num">
+						<h2 class="title_num">Курс CZK</h2>
+						<h2 class="num CZK-T">34.33</h2>
+					</div>
+					<div class="val-num">
+						<h2 class="title_num">Курс EUR</h2>
+						<h2 class="num EUR-T">34.33</h2>
+					</div>
+				</div>
+
+				<div class="convert-content">
+					<div class="convert">
+						<h2 class="convert-title">Отдаю:</h2>
+						<select name="form" id="from" class="Give-name">
+							<option value="RUB">RUB-Рубли</option>
+							<option value="USD">USD-Доллар</option>
+							<option value="EUR">EUR-Евро</option>
+						</select>
+						<input type="text" class="Give" />
+					</div>
+
+					<div class="convert">
+						<h2 class="convert-title">Получаю:</h2>
+						<select name="form2" id="from2" class="Receive-name">
+							<option value="USD">USD-Доллар</option>
+							<option value="RUB">RUB-Рубли</option>
+							<option value="EUR">EUR-Евро</option>
+						</select>
+						<input type="text" class="Receive" />
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
